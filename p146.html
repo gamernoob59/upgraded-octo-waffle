@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-box position="0 0 -2" color="aqua" length="2" width="2" height="2"></a-box>
+        <a-entity animation="property: position; from:-0 0 0;to: 0 -0.3 0;dir:alternate;loop: true; dur: 1000;">
+            <a-sphere position="-0.75 0.5 -1.5" color="black" radius="0.25"></a-sphere>
+            <a-sphere position="0.75 0.5 -1.5" color="black" radius="0.25"></a-sphere>
+        </a-entity>
+        <a-entity animation="property: position; from:-0.5 0 0;to: 0.5 0 0;dir:alternate;loop: true; dur: 100;">
+            <a-box position="0 1.5 -2" length="0.5" rotation="90 0 0" width="0.25" height="0.25" color="black"></a-box>
+        </a-entity>
+    </a-scene>
+</body>
+</html>
